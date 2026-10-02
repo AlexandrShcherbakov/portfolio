@@ -1,0 +1,57 @@
+<svg width="1800" height="330" viewBox="0 0 1800 330" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cutFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8FFFB"/>
+      <stop offset="42%" stop-color="#2EF0D2"/>
+      <stop offset="100%" stop-color="#0CB7A8"/>
+    </linearGradient>
+    <linearGradient id="gBladeFill" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2EF0D2" stop-opacity="0.95"/>
+      <stop offset="58%" stop-color="#2EF0D2"/>
+      <stop offset="82%" stop-color="#E8FFFB" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4.5" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0.05 0 0 0 0 0.95 0 0 0 0 0.78 0 0 0 .55 0"/>
+    </filter>
+    <filter id="tight" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .glow { fill:none; stroke:#2EF0D2; stroke-width:9; stroke-linecap:round; stroke-linejoin:round; opacity:.42; filter:url(#glow); }
+      .cut { fill:url(#cutFill); filter:url(#tight); }
+      .hot { fill:none; stroke:#E8FFFB; stroke-width:1.2; stroke-linecap:round; opacity:.72; }
+      .blade { fill:url(#gBladeFill); filter:url(#tight); }
+      .strong { font-family:Inter, Segoe UI, Arial, sans-serif; font-weight:700; fill:#EEF4F1; letter-spacing:-5px; }
+      .light { font-family:Inter, Segoe UI, Arial, sans-serif; font-weight:300; fill:#E9EEEC; letter-spacing:-5px; }
+    </style>
+  </defs>
+
+  <g transform="translate(26 34) scale(.55)">
+    <path class="glow" d="M 54 206 L 184 76"/>
+    <g class="glow">
+      <path d="M 34 214 L 104 308"/><path d="M 96 308 L 218 186"/><path d="M 108 226 L 204 200"/>
+      <path d="M 270 308 L 352 178"/><path d="M 358 184 L 432 304"/><path d="M 424 308 L 514 118"/><path d="M 526 122 L 512 298"/>
+    </g>
+    <path class="blade" d="M53.7 205.7 C88 170 121 137 154 104 L194 66 C190 76 186 84 180 91 C149 124 117 156 54.3 206.3 Z"/>
+    <g class="cut">
+      <path d="M33.6 214.3 Q66.5 262.9 103.6 308.3 L104.4 307.7 Q71.5 259.1 34.4 213.7 Z"/>
+      <path d="M96.3 308.3 Q159.2 249.2 218.3 186.3 L217.7 185.7 Q154.8 244.8 95.7 307.7 Z"/>
+      <path d="M108.1 226.4 Q156.8 216 204.1 200.4 L203.9 199.6 Q155.2 210 107.9 225.6 Z"/>
+      <path d="M270.4 308.2 Q313.6 244.7 352.4 178.2 L351.6 177.8 Q308.4 241.3 269.6 307.8 Z"/>
+      <path d="M357.6 184.2 Q392.4 245.6 431.6 304.2 L432.4 303.8 Q397.6 242.4 358.4 183.8 Z"/>
+      <path d="M424.4 308.2 Q471.8 214.3 514.4 118.2 L513.6 117.8 Q466.2 211.7 423.6 307.8 Z"/>
+      <path d="M525.6 122 Q515.9 209.8 511.6 298 L512.4 298 Q522.1 210.2 526.4 122 Z"/>
+    </g>
+    <g class="hot">
+      <path d="M84 176 L154 106"/><path d="M51 238 L87 286"/><path d="M124 280 L190 214"/><path d="M130 220 L182 206"/>
+      <path d="M292 272 L334 206"/><path d="M376 214 L416 278"/><path d="M444 266 L494 160"/><path d="M523 160 L516 260"/>
+    </g>
+  </g>
+
+  <g transform="translate(360 225)">
+    <text x="0" y="0" font-size="175"><tspan class="strong">Graphics</tspan><tspan class="light">Monster</tspan></text>
+  </g>
+</svg>
