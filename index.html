@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Alexander Shcherbakov — Render Engine Lead, graphics programmer and computer graphics researcher." />
+  <meta name="theme-color" content="#070A0D" />
+  <title>Alexander Shcherbakov — Render Engine Lead</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Alexander Shcherbakov — home">
+        <img src="logo.svg" alt="GraphicsMonster" class="brand-logo" />
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#public">Public</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-status">PRIVATE REVIEW</div>
+      <div class="header-rule" aria-hidden="true"><span></span></div>
+    </header>
+
+    <main id="top">
+      <section class="hero section section-first">
+        <div class="hero-grid">
+          <div class="hero-main">
+            <div class="technical-label">PROFILE / RENDERING / 2026</div>
+            <h1>Alexander<br />Shcherbakov</h1>
+            <p class="hero-role">Render Engine Lead</p>
+            <p class="hero-copy">
+              Production rendering, cross-platform GPU architecture and performance engineering.
+              Parallel academic track in computer graphics and real-time global illumination.
+            </p>
+            <div class="inline-links">
+              <a href="https://github.com/GaijinEntertainment/DagorEngine" target="_blank" rel="noreferrer">Dagor Engine ↗</a>
+              <a href="#work">Production work ↘</a>
+              <a href="#research">Research ↘</a>
+            </div>
+          </div>
+
+          <aside class="titles-panel" aria-label="Selected game titles">
+            <div class="technical-label">SELECTED TITLES</div>
+            <div class="titles-group">
+              <div class="title-list">
+                <a href="https://gaijinent.com/game/warthunder" target="_blank" rel="noreferrer">War Thunder</a>
+                <a href="https://gaijinent.com/game/enlisted" target="_blank" rel="noreferrer">Enlisted</a>
+                <a href="https://gaijinent.com/game/crsed" target="_blank" rel="noreferrer">CRSED</a>
+                <a href="https://gaijinent.com/game/active-matter" target="_blank" rel="noreferrer">Active Matter</a>
+                <a href="https://gaijinent.com/game/aces-of-thunder" target="_blank" rel="noreferrer">Aces of Thunder</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-header">
+          <div class="slash-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="section-title-wrap">
+            <h2>Production Engineering</h2>
+            <div class="section-rule"><span></span></div>
+            <div class="technical-label">01 / RENDER ENGINE / SYSTEMS</div>
+          </div>
+        </div>
+
+        <div class="work-layout">
+          <div class="work-intro">
+            <p class="lede">
+              I lead a Render Engine team and work on the systems that sit between game rendering code,
+              graphics APIs, GPU hardware and platform constraints.
+            </p>
+          </div>
+
+          <div class="capability-matrix" role="table" aria-label="Render engine capability matrix">
+            <div class="matrix-row matrix-head" role="row">
+              <span role="columnheader">DOMAIN</span>
+              <span role="columnheader">SCOPE</span>
+            </div>
+            <div class="matrix-row" role="row">
+              <strong role="cell">API & platform layer</strong>
+              <span role="cell">Cross-platform rendering architecture across PC, consoles, macOS and Linux — DX11/12, Vulkan, Metal and GNM.</span>
+            </div>
+            <div class="matrix-row" role="row">
+              <strong role="cell">Frame Graph</strong>
+              <span role="cell">Resource lifetime, aliasing, scheduling, history and render orchestration.</span>
+            </div>
+            <div class="matrix-row" role="row">
+              <strong role="cell">GPU performance</strong>
+              <span role="cell">GPU captures, bottleneck analysis, driver investigations, regressions and renderer optimization.</span>
+            </div>
+            <div class="matrix-row" role="row">
+              <strong role="cell">Shader systems</strong>
+              <span role="cell">HLSL/DXC compiler and toolchain work, diagnostics and platform-facing shader infrastructure.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section">
+        <div class="section-header">
+          <div class="slash-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="section-title-wrap">
+            <h2>Selected Research</h2>
+            <div class="section-rule"><span></span></div>
+            <div class="technical-label">02 / RESEARCH / GPU RENDERING</div>
+          </div>
+        </div>
+
+        <div class="research-meta">
+          <p>
+            PhD-equivalent degree in Computer Science. Research in GPU rendering,
+            real-time global illumination and rendering architecture.
+          </p>
+          <a class="mono-link" href="https://orcid.org/0000-0002-5360-4479" target="_blank" rel="noreferrer">ORCID ↗</a>
+        </div>
+
+        <div class="research-table" role="table" aria-label="Selected research timeline">
+          <div class="research-row research-head" role="row">
+            <span role="columnheader">YEAR</span>
+            <span role="columnheader">WORK</span>
+            <span role="columnheader">FOCUS</span>
+          </div>
+          <div class="research-row" role="row">
+            <code role="cell">2024</code>
+            <strong role="cell">GPU cache flush minimization in render graphs <a href="https://doi.org/10.24132/JWSCG.2024.8" target="_blank" rel="noreferrer">WSCG ↗</a> <small class="author-note">Co-author</small></strong>
+            <span role="cell">Execution ordering with explicit attention to render-pass and cache-control overhead.</span>
+          </div>
+          <div class="research-row" role="row">
+            <code role="cell">2023</code>
+            <strong role="cell">History-aware frame-graph resource allocation <a href="https://doi.org/10.24132/JWSCG.2023.7" target="_blank" rel="noreferrer">WSCG ↗</a> <small class="author-note">Co-author</small></strong>
+            <span role="cell">Resource reuse when data must survive across frames.</span>
+          </div>
+          <div class="research-row" role="row">
+            <code role="cell">2017</code>
+            <strong role="cell">Accelerating radiosity on GPUs <a href="https://dspace.zcu.cz/items/76ce18d5-8d2f-4d98-bdcf-b59cbfd9c190" target="_blank" rel="noreferrer">WSCG ↗</a> <small class="author-note">Co-author</small></strong>
+            <span role="cell">Form-factor matrix transformations, compression and GPU-oriented radiosity optimization.</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="public" class="section">
+        <div class="section-header">
+          <div class="slash-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="section-title-wrap">
+            <h2>Public Technical Work</h2>
+            <div class="section-rule"><span></span></div>
+            <div class="technical-label">03 / WRITING / VIDEO / INTERACTIVE</div>
+          </div>
+        </div>
+
+        <div class="public-list">
+          <a class="public-row" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+            <span class="public-index">01</span>
+            <span class="public-platform">YouTube</span>
+            <strong>Graphics Monster</strong>
+            <span>Renderer investigations, graphics experiments and technical videos.</span>
+            <code>OPEN ↗</code>
+          </a>
+          <a class="public-row" href="https://t.me/Graphics_Monster" target="_blank" rel="noreferrer">
+            <span class="public-index">02</span>
+            <span class="public-platform">Telegram</span>
+            <strong>Graphics Monster</strong>
+            <span>Stream announcements for Graphics Monster.</span>
+            <code>OPEN ↗</code>
+          </a>
+          <a class="public-row" href="https://www.shadertoy.com/user/Shcherbakov" target="_blank" rel="noreferrer">
+            <span class="public-index">03</span>
+            <span class="public-platform">ShaderToy</span>
+            <strong>Interactive shaders</strong>
+            <span>Small real-time graphics experiments and visual prototypes.</span>
+            <code>OPEN ↗</code>
+          </a>
+          <a class="public-row" href="https://habr.com/ru/users/lesandr/" target="_blank" rel="noreferrer">
+            <span class="public-index">04</span>
+            <span class="public-platform">Habr</span>
+            <strong>Technical writing</strong>
+            <span>Technical articles, renderer breakdowns and translations on computer graphics.</span>
+            <code>OPEN ↗</code>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-header">
+          <div class="slash-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="section-title-wrap">
+            <h2>About</h2>
+            <div class="section-rule"><span></span></div>
+            <div class="technical-label">04 / ENGINEERING PROFILE</div>
+          </div>
+        </div>
+
+        <div class="about-layout">
+          <p class="lede">
+            My work sits at the intersection of production rendering, GPU systems and applied research.
+            I focus on architecture that survives multiple APIs and platforms, measurable performance,
+            and technical decisions that remain understandable to the engineers maintaining them.
+          </p>
+          <dl class="profile-facts">
+            <div><dt>ROLE</dt><dd>Render Engine Lead</dd></div>
+            <div><dt>DOMAIN</dt><dd>Computer Graphics · GPU</dd></div>
+            <div><dt>ORCID</dt><dd><a href="https://orcid.org/0000-0002-5360-4479" target="_blank" rel="noreferrer">0000-0002-5360-4479 ↗</a></dd></div>
+            <div><dt>DEGREE</dt><dd>PhD-equivalent · Computer Science</dd></div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Alexander Shcherbakov</span>
+      <span class="footer-sep">/</span>
+      <span>Render Engine · Computer Graphics</span>
+      <span class="footer-spacer"></span>
+      <span>GRAPHITE SIGNAL / DRAFT</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
